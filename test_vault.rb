@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
-# test_vault.rb
 require "obsidian_api"
 
-# Prompt the user for the vault path
-puts "Please enter the path to your Obsidian vault:"
-vault_path = gets.chomp
+# Use the environment variable for the vault path
+vault_path = ENV['OBSIDIAN_VAULT_PATH']
+
+if vault_path.nil? || vault_path.empty?
+  puts "Please set the OBSIDIAN_VAULT_PATH environment variable."
+  exit
+end
 
 # Initialize your vault
 vault = ObsidianAPI::Vault.new(vault_path)
