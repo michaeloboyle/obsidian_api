@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in obsidian_api_gem.gemspec
+# Specify your gem's dependencies in obsidian_api.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
