@@ -9,7 +9,9 @@ Gem::Specification.new do |spec|
   spec.email         = ["michael@oboyle.co"]
 
   spec.summary       = "A Ruby gem for interacting with Obsidian vaults."
-  spec.description   = "ObsidianAPI Gem provides an easy-to-use interface for managing Markdown files, metadata, and events within an Obsidian vault. Ideal for developers looking to automate tasks or integrate Obsidian with Ruby applications."
+  spec.description = "ObsidianAPI Gem provides an interface for managing Markdown files, metadata, and events"\
+    "within an Obsidian vault. Ideal for developers looking to automate tasks or integrate Obsidian " \
+    "with Ruby applications."
   spec.homepage      = "https://github.com/michaeloboyle/obsidian_api"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.0.0"

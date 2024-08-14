@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-# lib/obsidian_api/vault.rb
 module ObsidianAPI
+  # The Vault class provides methods to interact with the Obsidian vault as a whole.
+  # It allows listing files, reading their content, writing new content, and deleting files.
   class Vault
     attr_reader :path
 
