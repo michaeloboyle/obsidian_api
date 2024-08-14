@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "obsidian_api/version"
 require "obsidian_api/vault"
 require "obsidian_api/note"

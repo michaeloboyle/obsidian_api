@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # lib/obsidian_api/note.rb
 
 module ObsidianAPI
@@ -29,7 +31,7 @@ module ObsidianAPI
 
     def remove_tag(tag)
       content = self.content
-      content.gsub!(/tags:.*\b#{tag}\b,?/, 'tags:')
+      content.gsub!(/tags:.*\b#{tag}\b,?/, "tags:")
       save(content)
     end
   end

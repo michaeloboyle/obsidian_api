@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/obsidian_api_spec.rb
 
 RSpec.describe ObsidianApi do

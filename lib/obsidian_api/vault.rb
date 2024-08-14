@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # lib/obsidian_api/vault.rb
 module ObsidianAPI
   class Vault
@@ -8,7 +10,7 @@ module ObsidianAPI
     end
 
     def list_files
-      Dir.glob(File.join(@path, '**/*.md'))
+      Dir.glob(File.join(@path, "**/*.md"))
     end
 
     def read(file_path)

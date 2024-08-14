@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 # test_vault.rb
-require 'obsidian_api'
+require "obsidian_api"
 
 # Prompt the user for the vault path
 puts "Please enter the path to your Obsidian vault:"
@@ -38,7 +40,7 @@ puts vault.read(new_note_name)
 puts "\nDo you want to delete #{new_note_name}? (y/n)"
 delete_confirmation = gets.chomp.downcase
 
-if delete_confirmation == 'y'
+if delete_confirmation == "y"
   vault.delete(new_note_name)
   puts "#{new_note_name} has been deleted."
 else
